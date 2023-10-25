@@ -386,3 +386,14 @@ http://192.168.1.141:6878/ace/getstream?id=eee55e3af2ad492cc7cef9b8587f7b5a9b2ad
 http://192.168.1.141:6878/ace/getstream?id=ea36a8a134fd2a0a777b1eec0716a85516c239ef
 #EXTINF:-1 group-title="Torrent2Acestream (a petición)" tvg-id="" tvg-logo="https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-mmed.jpg" ,Avatar. El Sentido del Agua
 http://192.168.1.141:6878/ace/getstream?id=6741b5e0d29492c284236e3fed4c758d571e284e
+
+#EXTINF:-1 group-title="DISCORD CHAMPIONS" tvg-id="CHAMPIONS1" tvg-logo="https://assets.stickpng.com/images/5842fe06a6515b1e0ad75b3b.png" ,CHAMPIONS1
+http://192.168.1.141:6878/ace/getstream?id=b25f9cf30170de284313e40bd96b1295a68971c6
+#EXTINF:-1 group-title="DISCORD CHAMPIONS" tvg-id="CHAMPIONS1-2" tvg-logo="https://assets.stickpng.com/images/5842fe06a6515b1e0ad75b3b.png" ,CHAMPIONS1-2
+http://192.168.1.141:6878/ace/getstream?id=5e0ae60572b3bf174205bcb06c721c2c147bb679
+#EXTINF:-1 group-title="DISCORD CHAMPIONS" tvg-id="CHAMPIONS1-3" tvg-logo="https://assets.stickpng.com/images/5842fe06a6515b1e0ad75b3b.png" ,CHAMPIONS1-3
+http://192.168.1.141:6878/ace/getstream?id=0143da48166959befba3a9558623a4f935351582
+#EXTINF:-1 group-title="DISCORD CHAMPIONS" tvg-id="CHAMPIONS1-4" tvg-logo="https://assets.stickpng.com/images/5842fe06a6515b1e0ad75b3b.png" ,CHAMPIONS1-4
+http://192.168.1.141:6878/ace/getstream?id=23c60aefce48aa8c6c1b6ffc061debc81a4d3ade
+#EXTINF:-1 group-title="DISCORD CHAMPIONS" tvg-id="CHAMPIONS1-5" tvg-logo="https://assets.stickpng.com/images/5842fe06a6515b1e0ad75b3b.png" ,CHAMPIONS1-5
+http://192.168.1.141:6878/ace/getstream?id=70e5143bc817ff5923f035df4f04e627f3dc399e
