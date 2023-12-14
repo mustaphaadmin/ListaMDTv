@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="SAW X" tvg-logo="https://pics.filmaffinity.com/Saw_X-770317273-large.jpg" group-title="MOVIES",SAW X
-.http://127.0.0.1:6878/ace/m/1c263e5a7ca26eb90318e0ba5762bd4d3c3fd3b7/39f5366529295d7b52183a07f1e17079.m3u8
+.http://192.168.1.141:6878/ace/m/1c263e5a7ca26eb90318e0ba5762bd4d3c3fd3b7/39f5366529295d7b52183a07f1e17079.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="UGEEN IPTV" tvg-logo="" group-title="Islami - القنوات الإسلامية",UGEEN IPTV
 http://ugeen.live:8080/kaicer_VIPth36q5/n73f9k/3019
 #EXTINF:-1 tvg-id="" tvg-name="•●★★--- Islami ---★★●•" tvg-logo="""" group-title="Islami - القنوات الإسلامية",•●★★--- Islami ---★★●•
