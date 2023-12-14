@@ -222,9 +222,6 @@ http://192.168.1.141:6878/ace/getstream?id=e40b29774fdfd953751a71f5695f647726623
 #EXTINF:-1 group-title="ESPN Colombia" tvg-logo="https://img.sport-tv-guide.live/images/tv-station-nl-espn-3-243.png" ,ESPN 3 Colombia
 http://192.168.1.141:6878/ace/getstream?id=b97f5975dbd067655432512d4693b417bc85a714
 
-#EXTINF:-1 group-title="M+ LaLiga TV BAR" tvg-logo="https://i.postimg.cc/Ss2j5BmJ/laligabar.png" ,M+ LaLiga TV BAR
-http://192.168.1.141:6878/ace/getstream?id=aa82e7d4f03061f2144a2f4be22f2e2210d42280
-
 #EXTINF:-1 group-title="M+ StbEmu" tvg-id="AMC" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/AMC.png" ,AMC
 http://mol-2.com:8080/play/live.php?mac=00:1A:79:C3:AF:36&stream=55457&extension=ts&play_token=ltn2GgE1z6
 #EXTINF:-1 group-title="M+ StbEmu" tvg-id="AMC Break" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/BIOGRA.png" ,AMC Break
