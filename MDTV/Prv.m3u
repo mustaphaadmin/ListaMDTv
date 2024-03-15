@@ -1,3 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="imdb" tvg-name="IMDb" tvg-logo="logo_imdb.png",Título de la película - Sinopsis: Breve descripción de la película
-https://streamtape.com/get_video?id=VO87LLzL0jhK8Oj&expires=1710584318&ip=DxysD0OSKxSHDN&token=S5TlvDbO7qqt&stream=1
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="NL | WITHLOVE" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/u1KYAyf91gHBqa1LKYj389GevRX.jpg",L'ULTIMO PARADISO - 2021
+http://forip.in:8080/movie/abdessamad_528372/LFIsr1pu/524970.mkv
