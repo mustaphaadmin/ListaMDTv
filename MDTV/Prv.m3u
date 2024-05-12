@@ -1,4 +1,3 @@
 #EXTM3U
-#EXTINF:0,prv
-#EXTVLCOPT:http-user-agent=StreamwireSmartersPlayer
-http://xtream-ie.com:80/live/mo3ad222H/mo3ad222H/2.ts
+#EXTINF:0,act
+http://xtream-ie.com:80/live/mo3ad222H/mo3ad222H/2.ts|User-Agent=StreamwireSmartersPlayer
