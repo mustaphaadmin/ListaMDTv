@@ -1,0 +1,85 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="SSC SPORTS 1" tvg-name="SSC SPORTS 1" group-title="SSC SPORTS",SSC SPORTS 1(1080p)
+http://177.39.23.9:8080/stream/ssc/ssc11080/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 2" tvg-name="SSC SPORTS 2" group-title="SSC SPORTS",SSC SPORTS 2(1080p)
+http://177.39.23.9:8080/stream/ssc/ssc21080/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 3" tvg-name="SSC SPORTS 3" group-title="SSC SPORTS",SSC SPORTS 3(1080p)
+http://177.39.23.9:8080/stream/ssc/ssc31080/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 4" tvg-name="SSC SPORTS 4" group-title="SSC SPORTS",SSC SPORTS 4(1080p)
+http://177.39.23.9:8080/stream/ssc/ssc41080/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 5" tvg-name="SSC SPORTS 5" group-title="SSC SPORTS",SSC SPORTS 5(1080p)
+http://177.39.23.9:8080/stream/ssc/ssc51080/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 1(360p)" tvg-name="SSC SPORTS 1(360p)" group-title="SSC SPORTS",SSC SPORTS 1(360p)
+http://177.39.23.9:8080/stream/ssc/ssc1360/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 2(360p)" tvg-name="SSC SPORTS 2(360p)" group-title="SSC SPORTS",SSC SPORTS 2(360p)
+http://177.39.23.9:8080/stream/ssc/ssc2360/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 3(360p)" tvg-name="SSC SPORTS 3(360p)" group-title="SSC SPORTS",SSC SPORTS 3(360p)
+http://177.39.23.9:8080/stream/ssc/ssc3360/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 4(360p)" tvg-name="SSC SPORTS 4(360p)" group-title="SSC SPORTS",SSC SPORTS 4(360p)
+http://177.39.23.9:8080/stream/ssc/ssc4360/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 5(360p)" tvg-name="SSC SPORTS 5(360p)" group-title="SSC SPORTS",SSC SPORTS 5(360p)
+http://177.39.23.9:8080/stream/ssc/ssc5360/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 1(720p)" tvg-name="SSC SPORTS 1(720p)" group-title="SSC SPORTS",SSC SPORTS 1(720p)
+http://177.39.23.9:8080/stream/ssc/ssc1720/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 2(720p)" tvg-name="SSC SPORTS 2(720p)" group-title="SSC SPORTS",SSC SPORTS 2(720p)
+http://177.39.23.9:8080/stream/ssc/ssc2720/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 3(720p)" tvg-name="SSC SPORTS 3(720p)" group-title="SSC SPORTS",SSC SPORTS 3(720p)
+http://177.39.23.9:8080/stream/ssc/ssc3720/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 4(720p)" tvg-name="SSC SPORTS 4(720p)" group-title="SSC SPORTS",SSC SPORTS 4(720p)
+http://177.39.23.9:8080/stream/ssc/ssc4720/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 5(720p)" tvg-name="SSC SPORTS 5(720p)" group-title="SSC SPORTS",SSC SPORTS 5(720p)
+http://177.39.23.9:8080/stream/ssc/ssc5720/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 1(144p)" tvg-name="SSC SPORTS 1(144p)" group-title="SSC SPORTS",SSC SPORTS 1(144p)
+http://177.39.23.9:8080/stream/ssc/sscsports1low/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 2(144p)" tvg-name="SSC SPORTS 2(144p)" group-title="SSC SPORTS",SSC SPORTS 2(144p)
+http://177.39.23.9:8080/stream/ssc/sscsports2low/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 3(144p)" tvg-name="SSC SPORTS 3(144p)" group-title="SSC SPORTS",SSC SPORTS 3(144p)
+http://177.39.23.9:8080/stream/ssc/sscsports3low/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 4(144p)" tvg-name="SSC SPORTS 4(144p)" group-title="SSC SPORTS",SSC SPORTS 4(144p)
+http://177.39.23.9:8080/stream/ssc/sscsports4low/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="SSC SPORTS 5(144p)" tvg-name="SSC SPORTS 5(144p)" group-title="SSC SPORTS",SSC SPORTS 5(144p)
+http://177.39.23.9:8080/stream/ssc/sscsports5low/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 1 SD" tvg-name="Bein Sports 1 SD" group-title="BEIN SPORTS",Bein Sports 1 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports101SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 2 SD" tvg-name="Bein Sports 2 SD" group-title="BEIN SPORTS",Bein Sports 2 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports103SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 3 SD" tvg-name="Bein Sports 3 SD" group-title="BEIN SPORTS",Bein Sports 3 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports103SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 4 SD" tvg-name="Bein Sports 4 SD" group-title="BEIN SPORTS",Bein Sports 4 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports104SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 5 SD" tvg-name="Bein Sports 5 SD" group-title="BEIN SPORTS",Bein Sports 5 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports5SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 6 SD" tvg-name="Bein Sports 6 SD" group-title="BEIN SPORTS",Bein Sports 6 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports6SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 7 SD" tvg-name="Bein Sports 7 SD" group-title="BEIN SPORTS",Bein Sports 7 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports7SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
+
+#EXTINF:-1 tvg-id="Bein Sports 8 SD" tvg-name="Bein Sports 8 SD" group-title="BEIN SPORTS",Bein Sports 8 SD
+http://177.39.23.9:8080/stream/beinsportssd/beinsports8SD/master.m3u8?u=stone%20tv&p=5e26d59ce65259c5adbc00b5372de41b0acc641258ab4df1ec88e35eaa2dd6f4
