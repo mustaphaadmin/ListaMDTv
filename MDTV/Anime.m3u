@@ -4,6 +4,8 @@
 #EXTGRP: Anime
 
 # Subgrupo: عهد الأصدقاء
+#EXTVLCOPT: logo-file=https://image.tmdb.org/t/p/original/c1iT96KlYTFCJ1mvaDTVDK0brJO.jpg
+
 #EXTINF:-1,[Mo7tas] عهد الأصدقاء - 01 [1080p] (THE DRAGON).mkv
 http://192.168.1.141:6878/ace/getstream?id=b250d736ca9b802c07d1f494e04704d1fec8368c&_idx=3
 
