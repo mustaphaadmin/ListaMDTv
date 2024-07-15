@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1,group-title="EVIL S1 " EVIL 1
+#EXTINF:-1,group-title="EVIL S1 ", EVIL 1
 http://192.168.1.141:6878/ace/getstream?id=d34ec4558b52a6164935b6ff26e3b431e62542ab
-#EXTINF:-1,group-title="EVIL S1 " EVIL 2
+#EXTINF:-1,group-title="EVIL S1 ", EVIL 2
 http://192.168.1.141:6878/ace/getstream?id=c359fa2818daf99c9406445f32299cfa05566733
 #EXTINF:-1,group-title="EVIL S1 " EVIL 3
 http://192.168.1.141:6878/ace/getstream?id=1555f3daa716787b8172f61b149e131bc1abce31
