@@ -24,7 +24,7 @@ def obtener_detalles_pelicula(id_pelicula):
         return None
 
 # Generar archivo M3U
-def generar_m3u(ids_peliculas, archivo_salida="MDTV2/lista.m3u"):
+def generar_m3u(ids_peliculas, archivo_salida="MDTV2/lista.m3u", grupo="VOD"):
     with open(archivo_salida, "w", encoding="utf-8") as archivo:
         archivo.write("#EXTM3U\n")
         for id_pelicula in ids_peliculas:
@@ -39,7 +39,8 @@ def generar_m3u(ids_peliculas, archivo_salida="MDTV2/lista.m3u"):
                     (f"https://www.youtube.com/watch?v={video['key']}" for video in videos if video["site"] == "YouTube" and video["type"] == "Trailer"),
                     "http://enlace_placeholder"  # Enlace por defecto si no hay trailer
                 )
-                archivo.write(f"#EXTINF:-1 tvg-logo=\"{poster_url}\", {titulo}\n")
+                # Añadir entrada al archivo M3U con grupo
+                archivo.write(f"#EXTINF:-1 tvg-logo=\"{poster_url}\" group-title=\"{grupo}\", {titulo}\n")
                 archivo.write(f"# Descripción: {descripcion}\n")
                 archivo.write(f"{trailer_url}\n")
         print(f"Lista M3U generada con éxito: {archivo_salida}")
