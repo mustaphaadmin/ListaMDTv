@@ -1,6 +1,9 @@
 name: Actualizar Lista M3U
 
 on:
+ push:
+    branches:
+      - main
   schedule:
     - cron: '0 2 * * *'  # Ejecución diaria a las 2 AM
   workflow_dispatch:  # Permite ejecución manual desde GitHub
