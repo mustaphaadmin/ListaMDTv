@@ -3,9 +3,12 @@ name: Update lista.m3u
 on:
   push:
     paths:
-      - peliculas.txt  # Activar solo cuando se modifica este archivo
+      - MDTV2/peliculas.txt  # Cambia esta ruta si el archivo está en otro lugar
   schedule:
-    - cron: "0 * * * *"  # Ejecutar cada hora automáticamente
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
 
 jobs:
   update-lista:
