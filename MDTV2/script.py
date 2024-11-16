@@ -5,7 +5,7 @@ API_KEY = "493351c02d78997848da30e6bae16575"
 URL_BASE = "https://api.themoviedb.org/3"
 
 # Función para cargar IDs de películas desde un archivo
-def cargar_ids_peliculas(archivo="peliculas.txt"):
+def cargar_ids_peliculas(archivo="MDTV2/peliculas.txt"):
     with open(archivo, "r") as f:
         return [linea.strip() for linea in f.readlines()]
 
