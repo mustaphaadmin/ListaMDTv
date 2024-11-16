@@ -20,7 +20,7 @@ def obtener_detalles_pelicula(id_pelicula):
         return None
 
 # Generar archivo M3U
-def generar_m3u(ids_peliculas, archivo_salida="lista.m3u"):
+def generar_m3u(ids_peliculas, archivo_salida="MDTV2/lista.m3u"):
     with open(archivo_salida, "w", encoding="utf-8") as archivo:
         archivo.write("#EXTM3U\n")
         for id_pelicula in ids_peliculas:
