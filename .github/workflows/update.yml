@@ -32,6 +32,6 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add lista.m3u
+        git add MDTV2/lista.m3u
         git commit -m "Actualizar lista.m3u automáticamente"
         git push
