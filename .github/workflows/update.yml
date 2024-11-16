@@ -3,9 +3,9 @@ name: Update lista.m3u
 on:
   push:
     paths:
-      - peliculas.txt
+      - peliculas.txt  # Activar solo cuando se modifica este archivo
   schedule:
-    - cron: "0 * * * *"  # Ejecutar cada hora
+    - cron: "0 * * * *"  # Ejecutar cada hora automáticamente
 
 jobs:
   update-lista:
