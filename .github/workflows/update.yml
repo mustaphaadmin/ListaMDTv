@@ -1,0 +1,35 @@
+name: Actualizar Lista M3U
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Ejecución diaria a las 2 AM
+  workflow_dispatch:  # Permite ejecución manual desde GitHub
+
+jobs:
+  actualizar-lista:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar el repositorio
+      uses: actions/checkout@v3
+
+    - name: Instalar Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.x
+
+    - name: Instalar dependencias
+      run: pip install requests
+
+    - name: Ejecutar el script
+      run: |
+        cd MDTV2
+        python script.py
+
+    - name: Subir cambios
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add MDTV2/lista.m3u
+        git commit -m "Actualizar lista M3U"
+        git push
