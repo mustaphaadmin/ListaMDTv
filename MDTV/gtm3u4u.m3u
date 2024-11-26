@@ -60,7 +60,7 @@ https://shls-live-ak.akamaized.net/out/v1/789c88ad335e4547ad14a84c19a5ba31/index
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="Bein sports 1" tvg-logo="" group-title="FUTBOL-STREAM",Bein sports 1
 https://live4.beinconnect.us/YallaGoalApp/beINSports1.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="Kol" tvg-logo="" group-title="FUTBOL-STREAM",Kol
-https://iosmirror.cc/hls/81769841.m3u8?in=3556fe89f538bfca8a71c320bc3d0b57::8c4853c0ad3bdc0ff195429b43467e5c::1728655938::se
+https://dmifrta.cdn.mangomolo.com:443/vod/_definst_/smil:2024-11-24/studioSKOWP.smil/chunklist_b5264724.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="Ssdr" tvg-logo="" group-title="FUTBOL-STREAM",Ssdr
 https://l.033055.xyz:443/live/ahmad/home/17.ts
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="PARTIDO" tvg-logo="" group-title="FUTBOL-STREAM",PARTIDO
