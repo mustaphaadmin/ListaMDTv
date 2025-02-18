@@ -3,7 +3,7 @@
 http://192.168.1.141:6878/ace/getstream?id=a54d3ec9d49487cb1e9102c74f341fec4cebd189
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="INSIGHT TV" tvg-logo="https://join.insight.tv/wp-content/uploads/2020/02/RGB-InsightTV-Landscape.png" group-title="UHD",INSIGHT TV
 http://192.168.1.141:6878/ace/getstream?id=2bc787fab6cfce8b5c7a7c6b85e862066d967a68
-EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="DRM-SS" tvg-logo="https://i.postimg.cc/nhBN9z8y/Love-Nature-Logo.png" group-title="UHD",LOVE NATURE
+#EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="DRM-SS" tvg-logo="https://i.postimg.cc/nhBN9z8y/Love-Nature-Logo.png" group-title="UHD",LOVE NATURE
 https://ssc-news-live-enc.edgenextcdn.net/out/v1/ef466f43623c4bbaa3f905b566ec35ea/index.mpd?|drmScheme=clearkey&drmLicense=3d04975236a44f62857d181597705ee6:362133e9cb13189ad4fe095ced216f60
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="SHAHID ASLI&HASRI" tvg-logo="https://shahid.mbc.net/streaming-pages/_next/image?url=https%3A%2F%2Fshahid.mbc.net%2FmediaObject%2Fslider%2FRanda%2FAlasly_logo0%2Foriginal%2FAlasly_logo0.png%3Fheight%3DNaN%26width%3D216%26croppingPoint%3D%26version%3D1%26type%3Dwebp&w=1024&q=75" group-title="SHAHID-TV",SHAHID ASLI&HASRI
 https://shls-live-ak.akamaized.net/out/v1/ea4275b6dc0840c198c17f6dc6f1ec49/index_1.m3u8
