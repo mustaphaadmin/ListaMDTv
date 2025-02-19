@@ -16,7 +16,8 @@ jobs:
         run: sudo apt-get install -y curl
 
       - name: Descargar playlist
-        run: curl -o playlist.m3u http://m3u4u.com/m3u/476rnmve74bj5e9yekgd
+        run: curl -L http://m3u4u.com/m3u/476rnmve74bj5e9yekgd -o playlist.m3u
+        cat playlist.m3u  # Esto mostrará el contenido en los logs
 
       - name: Commit y push de cambios
         run: |
