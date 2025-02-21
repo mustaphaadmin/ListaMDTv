@@ -57,7 +57,7 @@ if kwik_key:
     acl_token = get_channel_token(kwik_key, media_url)
     if acl_token:
         m3u8_link = construct_m3u8_link(media_url, acl_token)
-        response = requests.get(m3u8_link, headers={"Accept-Encoding": "identity"}))
+        response = requests.get(m3u8_link, headers={"Accept-Encoding": "identity"})
         print(response.text)
         print(m3u8_link)
     else:
