@@ -58,6 +58,8 @@ if kwik_key:
     if acl_token:
         m3u8_link = construct_m3u8_link(media_url, acl_token)
         response = requests.get(m3u8_link, headers={"Accept-Encoding": "identity"})
+        with open("ressources/kuw/rotlbc.m3u8", "w") as file:
+            file.write(f"#EXTM3U\n#EXTINF:-1,Stream Title\n{m3u8_link}\n")
         print(response.text)
         print(m3u8_link)
     else:
