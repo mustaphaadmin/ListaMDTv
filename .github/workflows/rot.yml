@@ -28,6 +28,17 @@ jobs:
           python_output=$(python ressources/kuw/rotlbc.py)
           echo "$python_output" > ressources/kuw/rotlbc.m3u8
 
+      - name: Clean Remote Directory via FTP
+        uses: sebastianpopp/ftp-action@v2.0.0
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: .
+          remoteDir: /mdtvr.42web.io/htdocs
+          transfers: |
+            rm -rf ressources
+
       - name: Create Directories via FTP
         uses: sebastianpopp/ftp-action@v2.0.0
         with:
@@ -40,7 +51,7 @@ jobs:
             mkdir ressources
             mkdir ressources/kuw
 
-      - name: Upload Specific File via FTP
+      - name: Upload Specific Files via FTP
         uses: sebastianpopp/ftp-action@v2.0.0
         with:
           host: ${{ secrets.FTP_SERVER }}
