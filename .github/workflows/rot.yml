@@ -34,10 +34,9 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: .
-          remoteDir: /mdtvr.42web.io/htdocs
+          remoteDir: /mdtvr.42web.io/htdocs/ressources/kuw
           transfers: |
-            rm -rf ressources
+            rm -rf *
 
       - name: Create Directories via FTP
         uses: sebastianpopp/ftp-action@v2.0.0
@@ -45,11 +44,9 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ressources/kuw
-          remoteDir: /mdtvr.42web.io/htdocs/ressources/kuw
+          remoteDir: /mdtvr.42web.io/htdocs/ressources
           transfers: |
-            mkdir ressources
-            mkdir ressources/kuw
+            mkdir kuw
 
       - name: Upload Specific Files via FTP
         uses: sebastianpopp/ftp-action@v2.0.0
@@ -59,7 +56,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ressources/kuw
           remoteDir: /mdtvr.42web.io/htdocs/ressources/kuw
-          include: rotlbc.m3u8
 
       - name: Commit and Push Changes
         env:
