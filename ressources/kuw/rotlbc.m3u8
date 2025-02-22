@@ -1,10 +1,10 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=4010722,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.640029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-rlbcpublish/rlbc_source/hdntl=exp=1740277234~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=7180dad6596289b8e4fb04a1c523aba41eeba630f1b4cd29269ce810c7e01124/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=710211,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.77.30,mp4a.40.2",CLOSED-CAPTIONS=NONE
-rlbcpublish/rlbc_480p/hdntl=exp=1740277234~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=7180dad6596289b8e4fb04a1c523aba41eeba630f1b4cd29269ce810c7e01124/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=405162,FRAME-RATE=25,RESOLUTION=426x240,CODECS="avc1.42c015,mp4a.40.2",CLOSED-CAPTIONS=NONE
-rlbcpublish/rlbc_240p/hdntl=exp=1740277234~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=7180dad6596289b8e4fb04a1c523aba41eeba630f1b4cd29269ce810c7e01124/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3432853,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.640029,mp4a.40.2",CLOSED-CAPTIONS=NONE
+rlbcpublish/rlbc_source/hdntl=exp=1740278505~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=278e3c18da03600363acdfeda4f7a6a57042e633dbe9cf05e3b930af52a98b4c/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=636044,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.77.30,mp4a.40.2",CLOSED-CAPTIONS=NONE
+rlbcpublish/rlbc_480p/hdntl=exp=1740278505~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=278e3c18da03600363acdfeda4f7a6a57042e633dbe9cf05e3b930af52a98b4c/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=370238,FRAME-RATE=25,RESOLUTION=426x240,CODECS="avc1.42c015,mp4a.40.2",CLOSED-CAPTIONS=NONE
+rlbcpublish/rlbc_240p/hdntl=exp=1740278505~acl=%2frlbclive%2frlbc.smil%2f*~data=hdntl~hmac=278e3c18da03600363acdfeda4f7a6a57042e633dbe9cf05e3b930af52a98b4c/chunks.m3u8
 
-https://live.kwikmotion.com/rlbclive/rlbc.smil/playlist.m3u8?hdnts=exp=1740190841~acl=/rlbclive/rlbc.smil/*~hmac=792f1cce15d96b6b214165cddc6698dccbc9d6406ff2a646505f806194f9a728
+https://live.kwikmotion.com/rlbclive/rlbc.smil/playlist.m3u8?hdnts=exp=1740192111~acl=/rlbclive/rlbc.smil/*~hmac=d5b24c19c8872bf93352912b838404086b2224ed7235f16548fd55cfc53f8789
