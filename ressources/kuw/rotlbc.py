@@ -8,7 +8,6 @@ def get_kwik_key_from_page():
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
         'Content-Type': 'application/x-mpegURL',
         'Origin': 'https://rotana.net',
-        'X-Forwarded-For': '216.239.80.141'
     }
     response = requests.get(url, headers=headers)
     response.raise_for_status()
