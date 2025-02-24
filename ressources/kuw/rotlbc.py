@@ -1,8 +1,9 @@
+import sys
 import requests
 from bs4 import BeautifulSoup
 
-def get_kwik_key_from_page():
-    url = "https://rotana.net/en/channels"
+def get_kwik_key_from_page(channel_id):
+    url = "https://rotana.net/en/live"
     headers = {
         'Referer': 'https://rotana.net/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
@@ -14,14 +15,13 @@ def get_kwik_key_from_page():
     response.raise_for_status()
     
     soup = BeautifulSoup(response.content, 'html.parser')
-    target_channel_id = "rotana-lbc"
-    channel_div = soup.find("a", {"id": target_channel_id})
+    channel_div = soup.find("a", {"id": channel_id})
     
     if channel_div:
         kwik_key = channel_div.get('onclick').split("'")[-2]
         return kwik_key
     else:
-        print("Channel ID not found on the page")
+        print(f"Channel ID {channel_id} not found on the page")
         return None
 
 def get_channel_token(kwik_key, media_url):
@@ -49,20 +49,9 @@ def get_channel_token(kwik_key, media_url):
 def construct_m3u8_link(media_url, acl_token):
     return f"https://live.kwikmotion.com/{media_url}live/{media_url}.smil/playlist.m3u8?hdnts={acl_token}"
 
-kwik_key = get_kwik_key_from_page()
-media_url = "rlbc"
-media_id = "rotanalbc"
+if len(sys.argv) != 2:
+    print("Usage: python rotlbc.py <channel_id>")
+    sys.exit(1)
 
-if kwik_key:
-    acl_token = get_channel_token(kwik_key, media_url)
-    if acl_token:
-        m3u8_link = construct_m3u8_link(media_url, acl_token)
-        response = requests.get(m3u8_link, headers={"Accept-Encoding": "identity"})
-        with open("ressources/kuw/rotlbc.m3u8", "w") as file:
-            file.write(f"#EXTM3U\n#EXTINF:-1,Stream Title\n{m3u8_link}\n")
-        print(response.text)
-        print(m3u8_link)
-    else:
-        print("Failed to retrieve ACL token")
-else:
-    print("Failed to retrieve kwik_key from the page")
+channel_id = sys.argv[1]
+media_url = channel_id
