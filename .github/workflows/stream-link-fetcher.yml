@@ -8,7 +8,7 @@ on:
       channel_id:
         description: 'ID del canal'
         required: true
-        default: 'rotana-lbc' # Puedes cambiar este valor por defecto al que desees
+        default: 'rotana-lbc'
 
 jobs:
   run_script:
