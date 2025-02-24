@@ -61,11 +61,13 @@ if kwik_key:
     acl_token = get_channel_token(kwik_key, media_url)
     if acl_token:
         m3u8_link = construct_m3u8_link(media_url, acl_token)
+        response = requests.get(m3u8_link)
+        response.raise_for_status()
         with open(f"ressources/kuw/{media_url}.m3u8", "w") as file:
             file.write("#EXTM3U\n")
             file.write("#EXT-X-VERSION:3\n")
             file.write(f"#EXT-X-STREAM-INF:BANDWIDTH=4265866,RESOLUTION=1920x1080,CODECS=\"avc1.640029,mp4a.40.2\",CLOSED-CAPTIONS=NONE\n{m3u8_link}\n")
-        print("M3U8 file updated successfully")
+        print(f"M3U8 file updated successfully with URL: {m3u8_link}")
     else:
         print("Failed to retrieve ACL token")
 else:
