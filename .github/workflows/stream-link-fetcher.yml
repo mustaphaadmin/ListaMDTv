@@ -30,7 +30,7 @@ jobs:
 
       - name: Run Script
         run: |
-          python ressources/kuw/rotlbc.py ${{ github.event.inputs.channel_id }}        
+          python ressources/kuw/rotlbc.py ${{ github.event.inputs.channel_id }}
 
       - name: pull
         run: |
@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit and Push Changes
         env:
-         GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
         run: |
           git config --local user.email "no@no.no"
           git config --local user.name "no"
