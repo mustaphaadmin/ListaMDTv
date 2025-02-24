@@ -30,8 +30,7 @@ jobs:
 
       - name: Run Script
         run: |
-          python_output=$(python ressources/kuw/rotlbc.py ${{ github.event.inputs.channel_id }})
-          echo "$python_output" >> ressources/kuw/${{ github.event.inputs.channel_id }}.m3u8        
+          python ressources/kuw/rotlbc.py ${{ github.event.inputs.channel_id }}        
 
       - name: pull
         run: |
