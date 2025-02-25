@@ -46,6 +46,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
         run: |
+          # Guardar el archivo en un directorio temporal para conservarlo al cambiar de rama
+          cp ressources/kuw/rotlbc.m3u8 /tmp/rotlbc.m3u8
+          
           # Verificar si la rama gh-pages existe; si no, crearla
           if git ls-remote --exit-code origin gh-pages; then
             git fetch origin gh-pages
@@ -58,9 +61,10 @@ jobs:
             git add index.html
             git commit -m "Initialize gh-pages branch"
           fi
-          # Copiar el archivo .m3u8 generado a la carpeta para GitHub Pages
+          
+          # Crear la carpeta para GitHub Pages y copiar el archivo desde el directorio temporal
           mkdir -p stream
-          cp ressources/kuw/rotlbc.m3u8 stream/rotlbc.m3u8
+          cp /tmp/rotlbc.m3u8 stream/rotlbc.m3u8
           git add stream/rotlbc.m3u8
           git commit -m "Update rotlbc.m3u8"
           git push origin gh-pages
