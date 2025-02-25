@@ -1,20 +1,23 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_kwik_key_from_page():
+# Configurar sesión para mantener cookies y headers
+session = requests.Session()
+session.headers.update({
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'Referer': 'https://rotana.net/',
+    'Origin': 'https://rotana.net',
+    'Content-Type': 'application/x-www-form-urlencoded'
+})
+
+def get_kwik_key():
+    """Obtiene el kwik_key desde la página de Rotana."""
     url = "https://rotana.net/en/channels"
-    headers = {
-        'Referer': 'https://rotana.net/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
-        'Content-Type': 'application/x-mpegURL',
-        'Origin': 'https://rotana.net',
-    }
-    response = requests.get(url, headers=headers)
+    response = session.get(url)
     response.raise_for_status()
-    
-    soup = BeautifulSoup(response.content, 'html.parser')
-    target_channel_id = "rotana-lbc"
-    channel_div = soup.find("a", {"id": target_channel_id})
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    channel_div = soup.find("a", {"id": "rotana-lbc"})
     
     if channel_div:
         kwik_key = channel_div.get('onclick').split("'")[-2]
@@ -23,43 +26,44 @@ def get_kwik_key_from_page():
         print("Channel ID not found on the page")
         return None
 
-def get_channel_token(kwik_key, media_url):
+def get_acl_token(kwik_key, media_url):
+    """Obtiene el ACL Token desde la API de Rotana."""
     url = "https://rotana.net/channels/generateAclToken"
-    data = {
-        'kwik_key': kwik_key,
-        'mediaUrl': media_url
-    }
-    headers = {
-        'Referer': 'https://rotana.net/',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Origin': 'https://rotana.net',
-        'X-Forwarded-For': '216.239.80.141'
-    }
-    response = requests.post(url, data=data, headers=headers)
+    data = {'kwik_key': kwik_key, 'mediaUrl': media_url}
+    
+    response = session.post(url, data=data)
     response.raise_for_status()
     
     try:
         response_json = response.json()
-        return response_json['data']
+        return response_json.get('data')
     except ValueError:
         print("Failed to parse JSON response")
         return None
 
-def construct_m3u8_link(media_url, acl_token):
+def get_m3u8_url(media_url, acl_token):
+    """Genera la URL M3U8 con el token ACL."""
     return f"https://live.kwikmotion.com/{media_url}live/{media_url}.smil/playlist.m3u8?hdnts={acl_token}"
 
-kwik_key = get_kwik_key_from_page()
+# Configuración de canal
 media_url = "rlbc"
-media_id = "rotanalbc"
+kwik_key = get_kwik_key()
 
 if kwik_key:
-    acl_token = get_channel_token(kwik_key, media_url)
+    acl_token = get_acl_token(kwik_key, media_url)
     if acl_token:
-        m3u8_link = construct_m3u8_link(media_url, acl_token)
-        response = requests.get(m3u8_link)
-        print(response.text)
-        print(m3u8_link)
+        m3u8_url = get_m3u8_url(media_url, acl_token)
+        print("M3U8 URL:", m3u8_url)
+        
+        # Obtener el contenido del archivo M3U8
+        m3u8_response = session.get(m3u8_url)
+        if m3u8_response.status_code == 200:
+            with open("rotlbc.m3u8", "w", encoding="utf-8") as f:
+                f.write(m3u8_response.text)
+            print("Archivo M3U8 guardado correctamente.")
+        else:
+            print("Error al obtener el M3U8:", m3u8_response.status_code)
     else:
-        print("Failed to retrieve ACL token")
+        print("No se pudo obtener el ACL Token.")
 else:
-    print("Failed to retrieve kwik_key from the page")
+    print("No se pudo obtener el kwik_key.")
