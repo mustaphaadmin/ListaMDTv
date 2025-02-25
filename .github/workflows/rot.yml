@@ -2,7 +2,7 @@ name: rotana
 
 on:
   schedule:
-    - cron: '0 */21 * * *'  # Este cron ejecuta el flujo cada 21 horas
+    - cron: '0 */21 * * *'
   workflow_dispatch:
 
 jobs:
@@ -21,20 +21,20 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4     
 
       - name: Run Script
         run: |
          python_output=$(python ressources/kuw/rotlbc.py)
          echo "$python_output" >> ressources/kuw/rotlbc.m3u8        
 
-      - name: pull
+      - name: Pull latest changes from main
         run: |
           git pull origin main
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Changes to main
         env:
-         GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
         run: |
           git config --local user.email "no@no.no"
           git config --local user.name "no"
@@ -42,12 +42,25 @@ jobs:
           git commit -m "rotana updates"
           git push origin main
 
-      # Paso añadido para subir el archivo a la rama gh-pages
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}
         run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          cp ressources/kuw/rotlbc.m3u8 ./stream/rotlbc.m3u8  # Copia el archivo a la carpeta de GitHub Pages
-          git add ./stream/rotlbc.m3u8
+          # Verificar si la rama gh-pages existe; si no, crearla
+          if git ls-remote --exit-code origin gh-pages; then
+            git fetch origin gh-pages
+            git checkout gh-pages
+          else
+            echo "gh-pages branch not found, creating it..."
+            git checkout --orphan gh-pages
+            git rm -rf .
+            echo "<html><body><h1>GitHub Pages initialized</h1></body></html>" > index.html
+            git add index.html
+            git commit -m "Initialize gh-pages branch"
+          fi
+          # Copiar el archivo .m3u8 generado a la carpeta para GitHub Pages
+          mkdir -p stream
+          cp ressources/kuw/rotlbc.m3u8 stream/rotlbc.m3u8
+          git add stream/rotlbc.m3u8
           git commit -m "Update rotlbc.m3u8"
           git push origin gh-pages
