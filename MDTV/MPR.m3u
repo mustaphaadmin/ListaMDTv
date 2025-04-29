@@ -1,3 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="DRM-SS" tvg-logo="https://i.postimg.cc/nhBN9z8y/Love-Nature-Logo.png" group-title="UHD",dr6dr
-http://192.168.1.51:8080/stream.m3u8
+#EXTINF:-1 tvg-name="The Last Of Us [Cap.201]" tvg-logo="https://pics.filmaffinity.com/the_last_of_us_season_2-822546434-large.jpg" group-title="Series",The Last Of Us [4k 2160p][Cap.201]
+http://192.168.1.141:6878/ace/getstream?id=99557dec562e453d54a3036bf03072e21bb67f46
+#EXTINF:-1 tvg-name="The Last Of Us [Cap.202]" tvg-logo="https://pics.filmaffinity.com/the_last_of_us_season_2-822546434-large.jpg" group-title="Series",The Last Of Us [4k 2160p][Cap.202]
+http://192.168.1.141:6878/ace/getstream?id=8bb30ade6ae985ad55a86073537118fc8af59e92
+#EXTINF:-1 tvg-name="The Last Of Us [Cap.203]" tvg-logo="https://pics.filmaffinity.com/the_last_of_us_season_2-822546434-large.jpg" group-title="Series",The Last Of Us [4k 2160p][Cap.203]
+http://192.168.1.141:6878/ace/getstream?id=a08675a9fc60984be66f1541ddd12ba993213996
