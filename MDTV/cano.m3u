@@ -129,6 +129,8 @@ http://192.168.1.141:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bf
 http://192.168.1.141:6878/ace/getstream?id=cc5782d37ae6b6e0bab396dd64074982d0879046
 #EXTINF:-1,M. Deportes 7 1080
 http://192.168.1.141:6878/ace/getstream?id=070f82d6443a52962d6a2ed9954c979b29404932
+#EXTINF:-1,M.L. Campeones 1080 22
+http://192.168.1.142:6878/ace/getstream?id=0a26e20f39845e928411e09a124374fccb6e1478
 #EXTINF:-1,M.L. Campeones 1080 MultiAudio
 http://192.168.1.141:6878/ace/getstream?id=0a26e20f39845e928411e09a124374fccb6e1478
 #EXTINF:-1,M.L. Campeones 1080 MultiAudio
