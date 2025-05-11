@@ -5,3 +5,5 @@ http://192.168.1.141:6878/ace/getstream?id=99557dec562e453d54a3036bf03072e21bb67
 http://192.168.1.141:6878/ace/getstream?id=8bb30ade6ae985ad55a86073537118fc8af59e92
 #EXTINF:-1 tvg-name="The Last Of Us [Cap.203]" tvg-logo="https://pics.filmaffinity.com/the_last_of_us_season_2-822546434-large.jpg" group-title="Series",The Last Of Us [4k 2160p][Cap.203]
 http://192.168.1.141:6878/ace/getstream?id=a08675a9fc60984be66f1541ddd12ba993213996
+#EXTINF:-1 tvg-name="MEGALODON2" tvg-logo="https://pics.filmaffinity.com/the_last_of_us_season_2-822546434-large.jpg" group-title="Series",MEGALODON2
+https://str12.vtube.network/hls/,x5s4zos4n5yki6cgao64tjpxgwtmsfsm3jhnfrfdqxos3y5isq3pn7hotm4q,.urlset/master.m3u8
