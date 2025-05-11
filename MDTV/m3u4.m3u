@@ -199,6 +199,8 @@ http://127.0.0.1:6878/ace/getstream?id=5e94200ae8b1d95cb559fb150e5993d92e15d4e7
 http://127.0.0.1:11470/e25fe1b26ec08451eb6d3b313885071f03f91c77/Mufasa%20El%20rey%20leon%20(2024)%20%5BBluray%5D%5BEsp%5D(wolfmax4k.com).avi
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="SEP207" tvg-logo="" group-title="MOVIES",SEP207
 http://192.168.1.141:6878/ace/getstream?id=0080fc7b8554dbb1d78af09110e69eef590ac3a6
+#EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="Mufasa" tvg-logo="" group-title="MOVIES",MEGALODON
+https://str12.vtube.network/hls/,x5s4zos4n5yki6cgao64tjpxgwtmsfsm3jhnfrfdqxos3y5isq3pn7hotm4q,.urlset/master.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="CADDO LAKE" tvg-logo="https://pics.filmaffinity.com/caddo_lake-701459212-mmed.jpg" group-title="MOVIES",CADDO LAKE
 https://r465--1pqdyczvx.c.scdns.io/stream/v1/hls/cYYEqtFBTxHnxQ5mGqGXQw/1739245578/web184.faselhd.cafe/all/178.130.53.46/no/EG/0/01-02/1/693933ee248da9faf95e0ce15d940902/160_hd1080b_playlist.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="DEADPOOL Y LOBEZNO" tvg-logo="" group-title="MOVIES",DEADPOOL Y LOBEZNO
