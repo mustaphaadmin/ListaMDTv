@@ -55,6 +55,10 @@ https://cdxaws-ak.akamaized.net/v1/channel/The_Pit/index_hls/1.m3u8
 https://cdxaws-ak.akamaized.net/v1/channel/WWE/index_hls/3.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="SHAHID F1" tvg-logo="https://shahid.mbc.net/_next/image?url=https%3A%2F%2Fshahid.mbc.net%2FmediaObject%2Fslider%2FHatem_Slider%2F2022%2FDec22%2FF1_logo%2Foriginal%2FF1_logo.png%3Fheight%3Dauto%26width%3D144%26croppingPoint%3D%26version%3D1%26type%3Dwebp&w=1440&q=75" group-title="SHAHID-TV",SHAHID F1
 https://shls-live-ak.akamaized.net/out/v1/789c88ad335e4547ad14a84c19a5ba31/index_3.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="MEJARTV" tvg-logo="http://yallashoot.video/wp-content/uploads/2024/10/arsenal-vs-psg-528x297.png" group-title="FUTBOL-STREAM",Uhd1
+https://news-11.com/moviball/okru/proxy.php?url=https%3A%2F%2Fvsd132.okcdn.ru%2Fhls%2F8131937897126.m3u8%2Fsig%2FqQioKshteX0%2Fexpires%2F1747058867940%2FsrcIp%2F92.113.19.101%2Furls%2F185.226.52.98%2FclientType%2F0%2FsrcAg%2FUNKNOWN%2Fmid%2F9625648373414%2F8131937897126_ultrahd%2Findex.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="MEJARTV" tvg-logo="http://yallashoot.video/wp-content/uploads/2024/10/arsenal-vs-psg-528x297.png" group-title="FUTBOL-STREAM",uhd2
+https://cdn-azd2048.telewebion.com/ek/faratar/live/playlist.m3u8?isp=NA&city=NA
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="MEJARTV" tvg-logo="http://yallashoot.video/wp-content/uploads/2024/10/arsenal-vs-psg-528x297.png" group-title="FUTBOL-STREAM",MEJARTV
 https://mejar.bassamnetflix2.workers.dev/svc-spo-fhd-08-dt/playlist.m3u8?dvr=true
 #EXTINF:-1 tvg-id="(no tvg-id)(m3u4u)" tvg-name="MEJAR720" tvg-logo="http://yallashoot.video/wp-content/uploads/2024/10/arsenal-vs-psg-528x297.png" group-title="FUTBOL-STREAM",MEJAR720
